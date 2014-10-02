@@ -2,22 +2,62 @@
 	<div class='login-signup-menu'>
 		<ul>
 			<!-- Links for toggeling login and signup forms -->
-			<li>Login</li>
-			<li>Signup</li>
+			<li ng-click="toggleLogin()">Login</li>
+			<li ng-click="toggleSignup()">Signup</li>
 		</ul>
 	</div>
 	<div class='forms-container'>
-		
 		<!-- Login Form -->
-		<div class='login-signup-form' ng-controller='loginCtrl'>
-			<!-- LOGIN FORM CODE GOES HERE -->
+		<div class='login-signup-form' ng-controller="loginCtrl">
+			<form role="form" ng-hide="loginFormHide">
+			  <div class="form-group">
+			    <label for="loginInputEmail1">Email address</label>
+			    <input type="email" class="form-control" id="loginInputEmail1" placeholder="Enter email">
+			  </div>
+			  <div class="form-group">
+			    <label for="loginInputPassword1">Password</label>
+			    <input type="password" class="form-control" id="loginInputPassword1" placeholder="Password">
+			  </div>
+			  <div class="checkbox">
+			    <label>
+			      <input type="checkbox">Remember Me?
+			    </label>
+			  </div>
+			  <button type="submit" class="btn btn-default">Login</button>
+			</form>
 		</div>
 
 		<!-- Signup Form -->
-		<div class='login-signup-form' ng-controller='signupCtrl'>
-		<!-- SIGNUP FORM CODE GOES HERE -->
+		<div class='login-signup-form' ng-controller="signupCtrl">
+			<form role="form" ng-hide="signupFormHide">
+				<div class="form-group">
+					<label for="signupInputName">Name</label>
+					<input type="text" class="form-control" id="signupInputName" placeholder="Enter name">
+				</div>
+				<div class="form-group">
+					<label for="signupInputEmail1">Email address</label>
+					<input type="email" class="form-control" id="signupInputEmail1" placeholder="Enter email">
+				</div>
+				<div class="form-group">
+					<label for="signupInputUsername">Username</label>
+					<input type="text" class="form-control" id="signupInputUsername" placeholder="Enter username">
+				</div>
+				<div class="form-group">
+					<label for="signupInputPassword1">Password</label>
+					<input type="password" class="form-control" id="signupInputPassword1" placeholder="Password">
+				</div>
+				<div class="form-group">
+					<label for="signupInputPassword2">Confirm Password</label>
+					<input type="password" class="form-control" id="signupInputPassword2" placeholder="Confirm password">
+				</div>
+				<button type="submit" class="btn btn-default">Signup</button>
+			</form>
 		</div>
 
 		
 	</div>
 </div>
+
+
+
+

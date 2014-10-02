@@ -2,37 +2,37 @@
 
 This should be a fun project as you'll be building forms and setting up validation for them. The approach to this project is to provide you with information and examples, and then let you build your forms and validation how you want. Pause at times throughout this project and pretend you're a user. What would you expect if you forgot to add an '@' when filling out an email input box? Or if you typed in the wrong username/password? In this project  you get to make up and develop what happens in these scenarios.
 
-## Getting started
+<!-- ## Getting started -->
 
-To get started with this project, you'll need to do the following:
-* Fork the repo and clone it to your computer
-* Install bower packages
+<!-- To get started with this project, you'll need to do the following: -->
+<!-- * Fork the repo and clone it to your computer -->
+<!-- * Install bower packages -->
 
 ## Creating Forms
 
 Most websites contain forms. Login and signup forms are two common examples. When creating your own forms, there are different types of form elements that can be used like text inputs, check boxes, and select dropdowns. For this project you will be creating both a login and signup form, and then applying validation to them. Keep in mind that there isn't one right way to create forms as there are different approaches you can take and Angular validation options that you can use. Feel free to customize this project any way you would like, or do extra research to see how others have created their forms that you can refer to as a reference.
 
-One option (that we recommend) to get started on building your forms is to use Bootstrap. Check out the available Bootstrap CSS for form elements [here](http://getbootstrap.com/css/#forms). You could create your own forms and CSS from scratch if you wanted. Bootstrap CSS is slick and easy though.
+<!-- One option (that we recommend) to get started on building your forms is to use Bootstrap. Check out the available Bootstrap CSS for form elements [here](http://getbootstrap.com/css/#forms). You could create your own forms and CSS from scratch if you wanted. Bootstrap CSS is slick and easy though. -->
 
-You'll notice on Bootstrap that along with easily creating nice looking form elements using their CSS classes, there are also CSS classes available for changing the appearance of inputs based on their validation state (success, warning, error, icons...). Take a moment to see how they work because you may want to use them later in the project as we deal with validation (using ng-class).
+<!-- You'll notice on Bootstrap that along with easily creating nice looking form elements using their CSS classes, there are also CSS classes available for changing the appearance of inputs based on their validation state (success, warning, error, icons...). Take a moment to see how they work because you may want to use them later in the project as we deal with validation (using ng-class). -->
 
-**For now, just worry about creating the forms and their elements.** We'll deal with validation later. In your home.html file you'll see two div tags for the login and signup forms. Notice they each have different controllers.
+<!-- **For now, just worry about creating the forms and their elements.** We'll deal with validation later. In your home.html file you'll see two div tags for the login and signup forms. Notice they each have different controllers. -->
 
 ### Create a Login Form
-Create a login form containing two inputs for **username** and **password**, and labels for each of them. Use the 'Basic Example' in that Bootstrap link above for help with what type attribute value (text, password, email) you should use for your inputs. Include a submit button at the bottom of the form.
+<!-- Create a login form containing two inputs for **username** and **password**, and labels for each of them. Use the 'Basic Example' in that Bootstrap link above for help with what type attribute value (text, password, email) you should use for your inputs. Include a submit button at the bottom of the form. -->
 
 ### Create a Signup Form
-Create a signup form containing inputs for at least the following: **name**, **email**, **username**, **password**, **password repeat**. Feel free to add additional inputs. Some extra examples could be age (accept an integer only), select option dropdown containing a list of US states (google 'javascript US states array' or something and store it in your service), male/female radio buttons, etc... The more you branch out, the more exposure you'll get to the variety of form elements available to use.
+<!-- Create a signup form containing inputs for at least the following: **name**, **email**, **username**, **password**, **password repeat**. Feel free to add additional inputs. Some extra examples could be age (accept an integer only), select option dropdown containing a list of US states (google 'javascript US states array' or something and store it in your service), male/female radio buttons, etc... The more you branch out, the more exposure you'll get to the variety of form elements available to use. -->
 
 ### Final Steps for Creating Forms
 
-At this point you should have both forms created. Both forms appear at the same time though. Add some code so only one form appears at a time, and the user can toggle between them. The links are already created in a div tag with the class 'login-signup-menu.' 
+<!-- At this point you should have both forms created. Both forms appear at the same time though. Add some code so only one form appears at a time, and the user can toggle between them. The links are already created in a div tag with the class 'login-signup-menu.'  -->
 
 Currently, when we type in our form inputs or click the submit button, nothing happens. Let's add some interactivity with our forms, including validation.
 
 ## Form Validation
 
-### How does AngularJS validation work?
+<!-- ### How does AngularJS validation work? -->
 
 When creating forms for an app, it's important to show visual feedback depending on the user's input. AngularJS provides a variety of ways to add validation to both forms and their inputs. Its ideal to validate as much as you can, or even all, **before** submitting any data to the server. In some cases however, you may need to send a request to the server for validation while the user fills out your form. An example would be to check if a username or email already exists.
 
