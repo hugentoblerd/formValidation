@@ -3,8 +3,11 @@ var app = angular.module('devSocial');
 app.controller('homeCtrl', function($scope) {
 
   // initially hide login and signup forms
-    $scope.loginFormHide = true;
-    $scope.signupFormHide = true;
+  $scope.loginFormHide = true;
+  $scope.signupFormHide = true;
+
+  // user object to store and validate user info
+  $scope.user = {};
 
   // toggles the login form
   $scope.toggleLogin = function () {
